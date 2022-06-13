@@ -9,3 +9,5 @@ Route::middleware([
 ])->group(function () {
     Route::resource('/products', ProductController::class);
 });
+
+Route::view('/hello-from-package', 'online-market::front.index');

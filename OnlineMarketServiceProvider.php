@@ -29,5 +29,15 @@ class OnlineMarketServiceProvider extends ServiceProvider
         
         Route::middleware('web')
             ->group(__DIR__ . ('/routes/web.php'));
+        
+        
+        $this->publishes([
+            __DIR__.'/config/online-market.php' => config_path('online-market.php'),
+        ]);
+
+
+        $this->loadMigrationsFrom(__DIR__.'/database/migrations');
+
+        $this->loadViewsFrom(__DIR__.'/views', 'online-market');
     }
 }
