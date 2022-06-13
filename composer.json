@@ -1,7 +1,7 @@
 {
     "name": "shaxzodbek-uzb/online-market",
     "version": "0.2",
-    "description": "Yangi package",
+    "description": "Yangi package uchun yozilgan",
     "autoload": {
         "psr-4": {
             "OnlineMarket\\": "/"
