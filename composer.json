@@ -1,0 +1,17 @@
+{
+    "name": "shaxzodbek-uzb/online-market",
+    "version": "0.2",
+    "description": "Yangi package",
+    "autoload": {
+        "psr-4": {
+            "OnlineMarket\\": "/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OnlineMarket\\OnlineMarketServiceProvider"
+            ]
+        }
+    }
+}
